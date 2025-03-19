@@ -1,0 +1,122 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* News Section */
+.news {
+    padding: 20px;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+.news-tile {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.news-tile:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    z-index: 10;  /* Bring the hovered tile forward */
+}
+
+.news-summary-tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 14px;
+    z-index: 20; /* Ensure it's above other elements */
+}
+
+.news-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
